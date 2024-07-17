@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw; /*este es para que agarre el 100% de la pantalla*/
+    background: rgb(225, 203, 247);
+    font-family: "Raleway", sans-serif;
+  
+}
+
+.paddingAll{                /*esta es para que toda la pagina tenga el mismo padding, se pone esta clase en cada elemento de html principal*/
+    padding: 40px 45px; 
+}
+
+.linkMenuCabecera{
+    text-decoration: none;
+    color: rgb(78, 3, 49);
+    font-weight: 400;
+}
+
+.linkMenuCabecera:hover{    /*cuando pase el mouse por el link se vera una linea abajo d ela palabra y mas gruesa la letra*/
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.cabeceraHeader{
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /*este es para que queden separados uno del otro*/
+    box-sizing: border-box; /*para quitar el scroll que se hizo por el padding*/
+}
+
+.tituloNombre{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.menuCabeceraHeader{
+    display: flex; /*la lista de los links estaba en menu de columna y esta propiedad hace que se ordenen en menu de fila */
+    list-style: none; /*este es para que desaparezcan las viñetas de la lista*/
+    gap: 15px; /*los links estaban juntos y gap es para que los links se separen*/
+
+}
+
+.contenedorDescripcion{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column; /*el texto que esta en el contenedor estaba en forma de fila y este propiedad la vuelve en columna*/
+    width: 60%;
+    gap: 20px;
+}
+
+.tituloContenedorBanner{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.descripcionContenedorBanner{
+    font-size: 22px;
+}
+
+.linksContenerdorBanner {
+    display: flex;
+    gap: 20px;
+}
+
+.linkMenuBanner{
+    text-decoration: none;
+    color: rgb(78, 3, 49);
+    font-weight: 400;
+}
+
+.linkMenuBanner:hover{    /*cuando pase el mouse por el link se vera una linea abajo d ela palabra y mas gruesa la letra*/
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.contenedorImagenBanner{
+    width: 30%;
+}
+
+/* contenedor sobre mi*/
+
+.contenedorSobreMi{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(181, 121, 241);
+    margin-top: 2rem;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+
+    
+/*contenedor de Skills*/
+
+.skillsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*margin-top: 2rem;*/
+    align-items: center;
+    /*gap: 30px;*/
+    box-sizing: border-box;
+}
+
+.todosLosSkills{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.skillsLista{
+    display: flex;
+    width: 15vw;
+    align-items: center;
+    margin-right: 0.5rem;
+    /*padding-left: 30px 30px;*/
+    box-sizing: border-box;
+}
+
+.skillsHover{
+    background-color: powderblue;
+    transition: background-color 0.5s;
+  }
+
+  .skillsHover:hover {
+    background-color: gold;
+  }
+
+  .skillsLista ul{
+    list-style: none;
+  }
+
+  /*contenedor de hobbies*/
+
+  .hobbiesContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3rem;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  .skillsTitulo{
+    margin: 50px 0;
+  }
+
+  .todosLosHobbies{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+  }
+
+  .hobbiesLista{
+    display: flex;
+    width: 15vw;
+    align-items: center;
+    margin-right: 0.5rem;
+    padding-left: 30px 30px;
+  }
+
+  .hobbiesLista ul{
+    list-style: none;
+  }
+
+
+  /*estilos de formacion academica*/
+
+  .formacionContainer{
+    background-color: rgb(181, 121, 241);
+    margin-top: 3rem;
+    padding: 20px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-sizing: border-box;
+  }
+
+  .todasFormacion{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+  }
+
+  .formacionLista ul{
+    list-style: none;
+  }
+
+  /*contenedor experiencia profesional*/
+
+    .experience{
+    margin-top: 2rem;
+    padding: 20px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .experiencie__box{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .experience__info{
+    text-align: center;
+  }
+
+
+/*contenedor del formulario*/
+
+.formcontato{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    margin: 40px 0;  /*este es para poner margen entre el contenedor de arriba y el de abajo*/
+}
+
+form label {
+    display: block; /*este es para que cada input y label esten uno arriba del otro*/
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input, form textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 20px 20px;
+    width: 60%;
+}
+
+.tituloFormulario{
+    margin: 20px 0;
+}
+
+.containerFormulario{
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.imagenFormulario{
+    width: 40%;
+    gap: 30px;
+    
+}
+
+.submit{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(181, 121, 241);
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background: rgb(78, 3, 49);
+}
+
+/*seccion footer*/
+
+.footer{
+    width: 100%;
+    display: flex;
+    background: rgb(181, 121, 241);
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+    
+    
